@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        <meta name="keywords" content="manga, vesperum, манга, перевод, сканлейт" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Gontar Anton" />
+        <title>Vesperum [Перевод манги] - Главная</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&subset=cyrillic">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="node_modules/core-js/client/shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        <script src="systemjs.config.js"></script>
+        <script>
+            System.import('app').catch(function(err){ console.error(err); });
+        </script>
+    </head>
+    <body>
+        <div class="slider" id="main-slider"><!-- самый внешний контейнер -->
+            <div class="slider-wrapper"><!-- внутренний враппер -->
+                <!-- slides -->
+                <div class="slide" id="slide-1" data-image="image1.jpg"></div>
+                <div class="slide" id="slide-2" data-image="image2.jpg"></div>
+                <div class="slide" id="slide-3" data-image="image3.jpg"></div>
+            </div>
+            <!-- кнопки "предыдущая" и "следующая" -->
+            <div class="slider-nav">
+                <button type="button" class="slider-previous">Предыдущий</button>
+                <button type="button" class="slider-next">Следующий</button>
+            </div>
+            <!-- ссылки на страницы -->
+            <div class="slider-pagination">
+                <a href="#slide-1">1</a>
+                <a href="#slide-2">2</a>
+                <a href="#slide-3">3</a>
+            </div>
+        </div>
+    </body>
+</html>
